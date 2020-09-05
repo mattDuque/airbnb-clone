@@ -1,0 +1,89 @@
+.header{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    top: 0;
+    background: white;
+    z-index: 1;
+    width: 100%;
+    box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.07);
+}
+
+.header__icon{
+    object-fit: contain;
+    height: 60px;
+    margin-left: 80px;
+}
+
+.header__center{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    flex: 1;
+    max-width: fit-content;
+    padding: 10px;
+    height: 23px;
+    border: 1px solid lightgray;
+    border-radius: 999px;
+    transition: box-shadow .2s;
+}
+
+.header__center:hover{
+    box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.25);
+}
+
+.search-icon{
+    color: white;
+    background: #FF385C;
+    border-radius: 999px;
+    padding: 5px;
+}
+
+.header__center > input {
+    cursor: pointer;
+    border: none;
+    width: 250px;
+    padding: 10px;
+    outline-width: 0;
+}
+
+.header__center > input::placeholder{
+    font-size: 14px;
+    color: black;
+}
+
+.header__right{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 15vw;
+    margin-right: 80px;
+}
+
+.header__right > span{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid lightgray;
+    border-radius: 999px;
+    transition: box-shadow .2s;
+}
+
+.header__right > span:hover{
+    box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.25);
+}
+
+.MuiAvatar-root{
+    margin: 5px 5px 5px 10px;
+    height: 32px !important;
+    width: 32px !important;
+}
+
+.menu{
+    margin: 5px 3px 5px 10px;
+    font-size: 20px !important;
+    color: #595959;
+}
